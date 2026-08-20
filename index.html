@@ -3,236 +3,506 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>リーベクリニック | こころとからだに寄り添うクリニック</title>
+    <title>リーベクリニック｜旭川・名寄エリアの訪問診療・在宅医療</title>
     <meta
       name="description"
-      content="リーベクリニックの公式ホームページ初稿です。診療案内、予約、アクセス、よくある質問をご確認いただけます。"
+      content="リーベクリニックは、旭川・名寄エリアで訪問診療を行う在宅医療クリニックです。自宅で診る、家族を支える、施設と連携する、24時間相談、看取りまで支える医療をご案内します。"
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="リーベクリニック ホーム">
-        <span class="brand-mark" aria-hidden="true">L</span>
+        <img class="brand-logo" src="assets/logo-liebe.png" alt="リーベクリニック ロゴ">
         <span>
           <span class="brand-name">リーベクリニック</span>
-          <span class="brand-sub">Lieber Clinic</span>
+          <span class="brand-sub">Liebe Clinic</span>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
         <span></span>
         <span></span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="主要ナビゲーション">
-        <a href="#medical">診療案内</a>
-        <a href="#first">初診の方へ</a>
-        <a href="#hours">診療時間</a>
-        <a href="#access">アクセス</a>
+        <a href="#worries">お悩みから探す</a>
+        <a href="#homecare">訪問診療</a>
+        <a href="#online">オンライン診療</a>
+        <a href="#support">24時間対応</a>
+        <a href="#partners">施設連携</a>
+        <a href="#doctor">院長紹介</a>
+        <a href="#flow">流れと費用</a>
+        <a href="#faq">FAQ</a>
       </nav>
-      <a class="header-cta" href="#reserve">予約</a>
+      <a class="header-cta" href="#contact">相談する</a>
     </header>
 
     <main id="top">
       <section class="hero">
-        <img class="hero-image" src="assets/hero-clinic.png" alt="明るく清潔感のあるクリニック内観">
-        <div class="hero-overlay"></div>
+        <div class="hero-shape hero-shape-blue" aria-hidden="true"></div>
+        <div class="hero-shape hero-shape-pink" aria-hidden="true"></div>
+        <div class="hero-logo">
+          <img src="assets/logo-liebe.png" alt="">
+        </div>
         <div class="hero-content">
-          <p class="eyebrow">地域のかかりつけクリニック</p>
-          <h1>不安を置いて、相談から始められる場所。</h1>
+          <p class="eyebrow">旭川・名寄エリアの訪問診療</p>
+          <h1>自宅で診る。家族を支える。施設とつながる。</h1>
           <p class="hero-copy">
-            リーベクリニックは、症状だけでなく生活背景や気持ちにも目を向け、
-            一人ひとりに合った診療を大切にします。
+            リーベクリニックは、通院が難しくなった方の生活の場へ医師がうかがう在宅医療クリニックです。
+            ご自宅や施設で、定期診療、処方、体調変化の相談、医療処置、病院との連携、人生の最終段階のご相談まで、暮らしに寄り添いながら支えます。
+            住み慣れた場所で、最期まで自分らしく過ごせる医療を目指します。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#reserve">Web予約</a>
-            <a class="button secondary" href="tel:0000000000">電話する</a>
+            <a class="button primary" href="#contact">訪問診療を相談する</a>
+            <a class="button secondary" href="#worries">困りごとから見る</a>
           </div>
         </div>
-      </section>
-
-      <section class="notice-band" aria-label="お知らせ">
-        <p><strong>お知らせ</strong> 2026年春のホームページ初稿です。正式な診療科目・所在地・予約方法は差し替え予定です。</p>
-      </section>
-
-      <section class="section intro">
-        <div class="section-heading">
-          <p class="eyebrow">Our Care</p>
-          <h2>話しやすさと、医学的な確かさを両立する診療へ。</h2>
+        <div class="hero-quick" aria-label="主要な相談内容">
+          <a href="#homecare">自宅・施設で診療</a>
+          <a href="#family">家族の負担を軽減</a>
+          <a href="#partners">施設と連携</a>
+          <a href="#support">24時間相談体制</a>
+          <a href="#endoflife">看取りまで支援</a>
         </div>
-        <div class="intro-grid">
+      </section>
+
+      <section class="notice-band" aria-label="公開前の確認事項">
+        <p><strong>公開前確認</strong> 電話番号、FAX、診療時間、訪問対応エリア、費用目安、24時間連絡先、連携病院名は最終運用に合わせて差し替えてください。</p>
+      </section>
+
+      <section id="worries" class="section worries">
+        <div class="section-heading wide">
+          <p class="eyebrow">Find By Concern</p>
+          <h2>いま困っていることから、必要な情報へ。</h2>
+          <p>
+            「何科にかかればよいか」ではなく、「いま何が困っているか」から選べる導線にしています。
+            在宅医療を検討するときに生まれやすい不安を入口に、必要な説明へつながります。
+          </p>
+        </div>
+        <div class="worry-grid">
+          <a class="worry-card" href="#homecare">
+            <span class="worry-number" aria-hidden="true">01</span>
+            <h3>通院が大変になってきた</h3>
+            <p>付き添い、移動、待ち時間が負担になってきた方へ。医師が訪問し、生活の場で診療します。</p>
+          </a>
+          <a class="worry-card" href="#family">
+            <span class="worry-number" aria-hidden="true">02</span>
+            <h3>家族だけで判断するのが不安</h3>
+            <p>発熱、食欲低下、転倒、薬のことなど、日々の変化をどこへ相談すればよいか整理します。</p>
+          </a>
+          <a class="worry-card" href="#partners">
+            <span class="worry-number" aria-hidden="true">03</span>
+            <h3>施設の医療体制を整えたい</h3>
+            <p>施設職員、薬局、訪問看護、病院との連絡体制をつくり、導入から安定運用まで支えます。</p>
+          </a>
+          <a class="worry-card" href="#support">
+            <span class="worry-number" aria-hidden="true">04</span>
+            <h3>夜間や急変時が心配</h3>
+            <p>24時間の相談体制を整え、緊急度に応じて医師判断、救急要請、病院受診へつなぎます。</p>
+          </a>
+          <a class="worry-card" href="#endoflife">
+            <span class="worry-number" aria-hidden="true">05</span>
+            <h3>最期まで施設や自宅で過ごしたい</h3>
+            <p>看取り、ACP、DNAR、急変時の方針を、ご本人・ご家族・施設と事前に確認します。</p>
+          </a>
+          <a class="worry-card" href="#flow">
+            <span class="worry-number" aria-hidden="true">06</span>
+            <h3>費用や始め方が分からない</h3>
+            <p>保険診療の仕組み、必要書類、初回訪問までの流れ、主治医をどうするかを分かりやすくご案内します。</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="homecare" class="section homecare">
+        <div class="split-layout">
+          <div>
+            <p class="eyebrow">Home Medical Care</p>
+            <h2>訪問診療とは、生活の場で医療を続ける仕組みです。</h2>
+            <p>
+              訪問診療は、医師がご自宅や施設へ定期的にうかがい、診察、処方、体調変化への対応を行う医療です。
+              体調が悪くなったときだけ呼ぶ往診とは異なり、日ごろから状態を把握し、病気の悪化や入退院のくり返しをできるだけ防ぐことを目指します。
+            </p>
+            <p>
+              外来では、病院へ行くための移動、待ち時間、付き添いが必要です。
+              訪問診療では、食事、睡眠、排泄、歩行、服薬、介護体制を見ながら治療を調整できるため、生活に即した判断がしやすくなります。
+            </p>
+          </div>
+          <div class="info-panel">
+            <h3>定期訪問の目安</h3>
+            <p class="large-number">月2回程度</p>
+            <p>状態に応じて訪問回数や内容を調整します。臨時対応が必要な場合は、緊急度を確認したうえで対応方針を判断します。</p>
+          </div>
+        </div>
+        <div class="service-grid">
           <article>
-            <span class="number">01</span>
-            <h3>丁寧なヒアリング</h3>
-            <p>症状の経過、生活習慣、不安に感じていることを整理しながら診察します。</p>
+            <h3>定期診療・慢性疾患管理</h3>
+            <p>高血圧、糖尿病、心不全、呼吸器疾患、認知症など、継続管理が必要な病状を生活の場で確認します。</p>
           </article>
           <article>
-            <span class="number">02</span>
-            <h3>わかりやすい説明</h3>
-            <p>検査や治療の選択肢を、納得して判断できる言葉でお伝えします。</p>
+            <h3>処方・薬剤管理</h3>
+            <p>薬局と連携し、お薬が途切れないよう調整します。残薬、頓服、飲み合わせ、眠気やふらつきも確認します。</p>
           </article>
           <article>
-            <span class="number">03</span>
-            <h3>通いやすい導線</h3>
-            <p>予約、受付、会計までの負担を少なくし、継続しやすい体験を整えます。</p>
+            <h3>採血・検査の相談</h3>
+            <p>採血は施設内で実施できる場合があります。画像検査が必要な場合は連携病院へ依頼します。</p>
+          </article>
+          <article>
+            <h3>医療処置</h3>
+            <p>点滴、カテーテル管理、在宅酸素、褥瘡、疼痛、発熱時の対応など、生活の場に合わせて対応します。</p>
           </article>
         </div>
       </section>
 
-      <section id="medical" class="section medical">
-        <div class="section-heading">
-          <p class="eyebrow">Medical Menu</p>
-          <h2>診療案内</h2>
-          <p>正式な診療範囲に合わせて調整できる、仮の構成です。</p>
+      <section id="online" class="section online">
+        <div class="section-heading wide">
+          <p class="eyebrow">Online Care</p>
+          <h2>オンライン診療について</h2>
+          <p>
+            リーベクリニックでは、映像と音声を用いたリアルタイムのオンライン診療を行っています。
+            厚生労働省の指針に沿って、必要なときは対面診療へつなぎます。
+          </p>
         </div>
-        <div class="medical-list">
-          <article class="medical-item">
-            <h3>一般内科</h3>
-            <p>発熱、咳、腹痛、生活習慣病など、日常的な体調不良の相談に対応します。</p>
+        <div class="online-grid">
+          <article>
+            <h3>医師が適切性を判断します</h3>
+            <p>症状、既往歴、服薬歴、緊急性などを確認し、オンライン診療が適切かを医師が判断します。</p>
           </article>
-          <article class="medical-item">
-            <h3>予防・検診</h3>
-            <p>健康診断、各種検査、ワクチン接種など、病気の予防と早期発見を支えます。</p>
+          <article>
+            <h3>必要時は対面診療へ</h3>
+            <p>診察や検査が必要な場合、十分な情報が得られない場合は、対面診療または適切な医療機関をご案内します。</p>
           </article>
-          <article class="medical-item">
-            <h3>オンライン相談</h3>
-            <p>再診や継続的な相談など、状態に応じてオンラインでの相談導線を用意します。</p>
+          <article>
+            <h3>急な症状は救急を優先</h3>
+            <p>強い胸痛、著しい息苦しさ、意識障害、けいれん、麻痺、大量出血などは、予約を待たず119番または速やかな対面受診をご検討ください。</p>
+          </article>
+        </div>
+        <div class="online-details" aria-label="オンライン診療の詳細">
+          <details>
+            <summary>対象・診療前相談について</summary>
+            <div class="online-detail-body">
+              <p>初診からオンライン診療を行える場合もありますが、オンラインのみでは十分な医学的情報を得られないことがあります。かかりつけ以外の医師が初診から対応する場合などは、必要に応じて診療前相談を行います。</p>
+              <p>診療前相談は、安全にオンライン診療を行えるかを確認するためのもので、診断・処方などの診療行為は含みません。相談後に対面診療をご案内する場合があります。</p>
+            </div>
+          </details>
+          <details>
+            <summary>処方・本人確認・プライバシーについて</summary>
+            <div class="online-detail-body">
+              <p>情報通信機器を用いた初診では、麻薬および向精神薬を処方しません。対面診療を経ていない症状についても、麻薬・向精神薬はオンラインでは処方できません。</p>
+              <p>基礎疾患などの情報を十分に確認できない初診では、安全管理が特に必要な薬剤や8日分以上の処方はできません。処方の必要性・受取方法は、診察のうえ医師が判断します。</p>
+              <p>初診時は原則として顔写真付き本人確認書類でご本人を確認し、保険資格も確認します。第三者に会話を聞かれない場所から受診してください。医療従事者が同席する場合は、事前にご説明して同意をいただきます。</p>
+            </div>
+          </details>
+          <details>
+            <summary>ご利用方法・費用・運用体制について</summary>
+            <div class="online-detail-body">
+              <p>文字、写真、録画動画、メール、チャットのみで診療を完結することはありません。カメラ・マイク付きのスマートフォン、タブレット、パソコン等と、安定した通信環境が必要です。</p>
+              <p>予約方法、診療時間、使用するシステム、診療前相談料、システム利用料、支払方法、処方箋・お薬の受取方法は、受診前にご案内します。保険診療では、原則として自己負担割合に応じた診療費がかかります。</p>
+              <p>当院は対面診療の体制を整え、オンライン資格確認、電子処方箋管理サービス等の活用、医療情報の適切な共有と安全管理に努めます。自由診療をオンラインで行う場合は、内容・費用・期間・回数・主なリスクと副作用を個別に表示します。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="family" class="section family">
+        <div class="section-heading">
+          <p class="eyebrow">For Families</p>
+          <h2>家族の「どうしたらいいか分からない」を、ひとつずつ整理します。</h2>
+          <p>
+            在宅医療で支えるのは、患者さんだけではありません。
+            遠方に住むご家族、仕事や育児と介護を両立するご家族、施設に任せきりでよいのか不安なご家族にとっても、相談できる医療者がいることは大切です。
+          </p>
+        </div>
+        <div class="support-list">
+          <article>
+            <h3>体調変化の相談</h3>
+            <p>発熱、食欲低下、眠気、息苦しさ、転倒、便秘、むくみなど、日々の変化を施設スタッフや関係職種と共有しながら確認します。</p>
+          </article>
+          <article>
+            <h3>主治医の選び方</h3>
+            <p>今の主治医を継続しながら訪問診療が補助的に関わる形と、訪問診療医へ一本化する形の両方を相談できます。</p>
+          </article>
+          <article>
+            <h3>書類・制度の相談</h3>
+            <p>主治医意見書、訪問看護指示書、診療情報提供書など、必要に応じて施設や関係機関と連携して作成します。</p>
           </article>
         </div>
       </section>
 
-      <section id="first" class="section first-visit">
+      <section id="support" class="section urgent">
+        <div class="split-layout reverse">
+          <div class="info-panel dark">
+            <h3>24時間対応の考え方</h3>
+            <p>
+              主治医本人へ常時直通する形ではなく、オンコール体制で責任をもって応答し、必要時に医師が判断します。
+              緊急度が高い場合は、患者さんの安全を最優先に119番や病院受診を優先します。
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">After Hours</p>
+            <h2>夜間・休日も、迷ったときの連絡先を明確に。</h2>
+            <p>
+              夜間や休日の不安を減らすためには、「誰が」「どこへ」「何を伝えるか」を決めておくことが重要です。
+              施設では、状況を把握している責任者から医療者へ連絡し、バイタル、意識、呼吸状態、発症時刻、既往歴、ACP/DNARの方針などを共有します。
+            </p>
+            <p>
+              ご家族から直接医師へ連絡したい場面もありますが、原則は施設経由で情報を一本化することで、判断の抜け漏れを防ぎます。
+              緊急性が高い場合は例外的な連絡や救急要請を優先します。
+            </p>
+          </div>
+        </div>
+        <div class="emergency-box">
+          <h3>119番を優先する症状の例</h3>
+          <ul>
+            <li>呼びかけに反応しない、意識がはっきりしない</li>
+            <li>息が苦しい、呼吸の様子が明らかにおかしい</li>
+            <li>突然ろれつが回らない、手足が動かない</li>
+            <li>胸が締め付けられるような強い痛みがある</li>
+            <li>大量出血、吐血、下血などがある</li>
+          </ul>
+          <p>迷うほど緊急性が高いと感じる場合は、患者さんの安全を最優先に救急要請をしてください。</p>
+        </div>
+      </section>
+
+      <section id="endoflife" class="section endoflife">
         <div class="section-heading">
-          <p class="eyebrow">First Visit</p>
-          <h2>初診の方へ</h2>
+          <p class="eyebrow">End-of-life Care</p>
+          <h2>看取りまで、本人らしい時間を支えるために。</h2>
+          <p>
+            「できるだけ施設で過ごしたい」「病院ではなく自宅で最期を迎えたい」「急変したときにどこまで治療するか家族で迷っている」。
+            そうした話は、差し迫ってからではなく、まだ余裕のある時期から少しずつ整理しておくことが大切です。
+          </p>
+          <p>
+            リーベクリニックでは、ACP、DNAR、緊急時の搬送方針、症状緩和、亡くなられた場合の対応について、ご本人・ご家族・施設と事前に確認します。
+            希望は途中で変わっても構いません。状態や気持ちの変化に合わせて、何度でも話し合い直します。
+          </p>
+        </div>
+      </section>
+
+      <section id="partners" class="section partners">
+        <div class="section-heading wide">
+          <p class="eyebrow">For Facilities & Professionals</p>
+          <h2>施設・ケアマネ・医療機関と、導入から安定運用まで連携します。</h2>
+          <p>
+            訪問診療は、医師が訪問するだけでは安定しません。
+            施設の観察、薬局の薬剤管理、訪問看護のケア、病院の後方支援、家族への説明がつながってはじめて、安心して続けられる医療になります。
+          </p>
+        </div>
+        <div class="partner-grid">
+          <article>
+            <h3>施設管理者の方へ</h3>
+            <p>契約、同意、個人情報の取扱い、24時間連絡カード、書類窓口、急変時の連絡手順まで、施設の運用に合わせて整理します。</p>
+          </article>
+          <article>
+            <h3>ケアマネジャーの方へ</h3>
+            <p>通院困難、服薬管理、主治医意見書、訪問看護指示、退院後の生活設計など、医療と介護の接点を一緒に整理します。</p>
+          </article>
+          <article>
+            <h3>病院・診療所の方へ</h3>
+            <p>退院支援、紹介状、検査依頼、入院相談、後方支援病院との調整など、地域連携の窓口として対応します。</p>
+          </article>
+        </div>
+        <div class="phase-grid">
+          <article>
+            <span>Phase A</span>
+            <h3>導入準備</h3>
+            <p>契約、同意取得、診療情報提供、保険情報、内服一覧、家族連絡先、ACP/DNAR、連携設計を確認します。</p>
+          </article>
+          <article>
+            <span>Phase B</span>
+            <h3>初回訪問・立ち上げ</h3>
+            <p>初回診察で課題を洗い出し、定期訪問、薬剤調整、検査、緊急時連絡、書類管理の運用を始めます。</p>
+          </article>
+          <article>
+            <span>Phase C</span>
+            <h3>安定運用</h3>
+            <p>月2回程度の定期訪問を軸に、臨時対応、薬局連携、病院連携、書類更新、看取り方針の見直しを継続します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="flow" class="section flow">
+        <div class="section-heading">
+          <p class="eyebrow">Flow & Cost</p>
+          <h2>ご利用までの流れ</h2>
+          <p>パンフレットの構成に合わせて、初回相談から診療開始までを4ステップでご案内します。</p>
         </div>
         <ol class="steps">
           <li>
             <span>1</span>
             <div>
-              <h3>予約</h3>
-              <p>Webまたはお電話でご予約ください。急な症状の方は電話でご相談ください。</p>
+              <h3>お問い合わせ</h3>
+              <p>まずはお電話でご相談ください。現在の状況を伺い、訪問診療の対象となるかを確認します。</p>
             </div>
           </li>
           <li>
             <span>2</span>
             <div>
-              <h3>受付</h3>
-              <p>保険証、各種医療証、お薬手帳、紹介状があればお持ちください。</p>
+              <h3>事前相談・面談</h3>
+              <p>病状やご希望を詳しく伺い、診療内容や費用の考え方をご説明します。</p>
             </div>
           </li>
           <li>
             <span>3</span>
             <div>
-              <h3>診察</h3>
-              <p>現在の症状とお困りごとを確認し、必要に応じて検査や治療方針をご提案します。</p>
+              <h3>ご契約</h3>
+              <p>必要な書類手続きを行い、診療開始に向けた準備を整えます。</p>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <div>
+              <h3>診療開始</h3>
+              <p>定期的な訪問診療をスタートします。目安は月2回程度で、状態に応じて訪問回数を調整します。</p>
             </div>
           </li>
         </ol>
+        <div class="cost-grid">
+          <article>
+            <h3>医療保険が使えます</h3>
+            <p>自己負担割合は1割・2割・3割など、保険証や制度により異なります。</p>
+          </article>
+          <article>
+            <h3>費用は内容により変わります</h3>
+            <p>診察料に加え、在宅医療の管理料、検査、処置、文書料などがかかる場合があります。</p>
+          </article>
+          <article>
+            <h3>開始前に説明します</h3>
+            <p>費用が心配な方には、開始前や変更時にできるだけ分かりやすく概算をご説明します。</p>
+          </article>
+        </div>
       </section>
 
-      <section id="hours" class="section split">
+      <section id="doctor" class="section doctor">
         <div class="section-heading">
-          <p class="eyebrow">Hours</p>
-          <h2>診療時間</h2>
-          <p>実際の診療時間が決まり次第、曜日ごとの表に反映します。</p>
+          <p class="eyebrow">Doctor</p>
+          <h2>院長紹介</h2>
         </div>
-        <div class="hours-panel">
-          <table>
-            <thead>
-              <tr>
-                <th>時間</th>
-                <th>月</th>
-                <th>火</th>
-                <th>水</th>
-                <th>木</th>
-                <th>金</th>
-                <th>土</th>
-                <th>日</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>9:00-13:00</th>
-                <td>●</td>
-                <td>●</td>
-                <td>●</td>
-                <td>休</td>
-                <td>●</td>
-                <td>●</td>
-                <td>休</td>
-              </tr>
-              <tr>
-                <th>15:00-18:30</th>
-                <td>●</td>
-                <td>●</td>
-                <td>●</td>
-                <td>休</td>
-                <td>●</td>
-                <td>休</td>
-                <td>休</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="table-note">休診日: 木曜・日曜・祝日。上記は仮データです。</p>
+        <div class="doctor-grid">
+          <article>
+            <h3>院長　山崎 清裕（1994年生まれ）</h3>
+            <p>やまざき せいゆう</p>
+            <p>患者さんとご家族にとって、相談しやすく動きやすい在宅医療の窓口であることを大切にしています。</p>
+          </article>
+          <article>
+            <h3>経歴</h3>
+            <p>2022年 北海道大学医学部 卒業</p>
+            <p>砂川市立病院（内科・精神科・救急科・外科・小児科・産婦人科・麻酔科）</p>
+            <p>札幌医科大学附属病院 救急科、手稲渓仁会病院、勤医協中央病院 等</p>
+          </article>
+          <article>
+            <h3>メッセージ</h3>
+            <p>救急医として、3次救急からへき地医療まで幅広い臨床経験を持ちます。病気だけでなく、生活・ご家族・施設の状況まで含めて診る在宅医療を大切にしています。</p>
+            <p>「病院で待つ医療」から「出向く医療」へ。皆様のかかりつけ医として、フットワーク軽く、そして温かくサポートいたします。</p>
+          </article>
         </div>
       </section>
 
-      <section id="reserve" class="reserve">
+      <section id="faq" class="section faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>よくあるご質問</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>どのくらいの頻度で診察に来ますか</summary>
+            <p>目安は月2回程度です。病状や療養環境に応じて、訪問回数や内容を調整します。</p>
+          </details>
+          <details>
+            <summary>ちょっとした相談でも連絡してよいですか</summary>
+            <p>はい。施設入居中の方は、まず施設スタッフへお伝えください。緊急度に応じて医療者へつなぎます。</p>
+          </details>
+          <details>
+            <summary>夜間は必ず医師につながりますか</summary>
+            <p>主治医本人へ常時直通ではない場合もありますが、オンコール体制で責任をもって応答し、必要時は医師が判断します。</p>
+          </details>
+          <details>
+            <summary>採血や画像検査はできますか</summary>
+            <p>採血は施設内で実施できる場合があります。画像検査は当院で行えないため、必要時は近隣病院や検査施設へ依頼します。</p>
+          </details>
+          <details>
+            <summary>看取りの相談はできますか</summary>
+            <p>はい。ご本人・ご家族・施設と事前に方針を確認し、状態に応じて必要な対応や書類等を行います。</p>
+          </details>
+          <details>
+            <summary>オンライン診療は利用できますか</summary>
+            <p>医師が医学的に適切と判断した場合に利用できます。症状や状態によっては、オンラインではなく対面診療・訪問診療・救急受診をご案内します。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="reserve">
         <div>
-          <p class="eyebrow">Reservation</p>
-          <h2>ご予約・お問い合わせ</h2>
-          <p>症状やご希望の診療内容を確認し、必要な受診方法をご案内します。</p>
+          <p class="eyebrow">Contact</p>
+          <h2>お問い合わせ・ご相談はこちら</h2>
+          <p>訪問診療のご相談、施設からのご相談、退院後の受け入れ相談、地域連携のご連絡を承ります。</p>
         </div>
         <div class="reserve-actions">
-          <a class="button primary" href="#">Web予約を開く</a>
-          <a class="button ghost" href="tel:0000000000">000-0000-0000</a>
+          <a class="button primary" href="tel:0166743774">TEL：0166-74-3774</a>
+          <a class="button secondary" href="tel:0166743240">FAX：0166-74-3240</a>
+          <a class="button ghost" href="mailto:liebe@aiseikai.care">Email：liebe@aiseikai.care</a>
         </div>
       </section>
 
-      <section id="access" class="section access">
+      <section class="section access">
         <div class="section-heading">
           <p class="eyebrow">Access</p>
           <h2>アクセス</h2>
         </div>
-        <div class="access-grid">
-          <div>
-            <p class="address">〒000-0000<br>東京都〇〇区〇〇 0-0-0</p>
-            <p>最寄駅から徒歩約5分。駐輪場・近隣コインパーキングの案内をここに掲載できます。</p>
+        <div class="access-table">
+          <div class="access-row">
+            <div class="access-label">医療機関名称</div>
+            <div class="access-value">リーベクリニック</div>
           </div>
-          <div class="map-placeholder" aria-label="地図の仮表示">
-            <span>MAP</span>
+          <div class="access-row">
+            <div class="access-label">所在地</div>
+            <div class="access-value">
+              〒070-0035 北海道旭川市5条通6丁目4-59 第一五条ビルマンション1階
+              <a href="https://www.google.com/maps?q=43.7703785,142.3590756" target="_blank" rel="noopener noreferrer">【地図】</a>
+            </div>
+          </div>
+          <div class="access-row">
+            <div class="access-label">最寄駅</div>
+            <div class="access-value">旭川駅</div>
+          </div>
+          <div class="access-row access-map-row">
+            <div class="access-label">地図</div>
+            <div class="access-value">
+              <div class="map-frame" aria-label="Googleマップ">
+                <iframe
+                  title="リーベクリニック 周辺地図"
+                  src="https://www.google.com/maps?q=43.7703785,142.3590756&z=17&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <a class="map-link" href="https://www.google.com/maps?q=43.7703785,142.3590756" target="_blank" rel="noopener noreferrer">Googleマップで開く</a>
+              </div>
+              <p class="access-note">訪問診療中心のため、ご来院前は事前にご連絡ください。TEL：0166-74-3774 / FAX：0166-74-3240</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section faq">
+      <section class="section pamphlet" id="pamphlet">
         <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>よくある質問</h2>
+          <p class="eyebrow">Pamphlet</p>
+          <h2>三つ折りパンフレット</h2>
+          <p>ご挨拶・理念、医師紹介、訪問診療でできること、ご利用までの流れをまとめた資料です。</p>
         </div>
-        <div class="faq-list">
-          <details>
-            <summary>予約なしでも受診できますか？</summary>
-            <p>当日の状況によりご案内できる場合があります。待ち時間を少なくするため、事前予約をおすすめします。</p>
-          </details>
-          <details>
-            <summary>支払い方法は何が使えますか？</summary>
-            <p>現金、クレジットカード、電子決済など、実際の対応方法に合わせて掲載します。</p>
-          </details>
-          <details>
-            <summary>オンライン診療は利用できますか？</summary>
-            <p>症状や診療内容により可否が異なります。まずは受付までお問い合わせください。</p>
-          </details>
-        </div>
+        <a class="pamphlet-link" href="assets/pamphlet-trifold.pdf" target="_blank" rel="noopener noreferrer">パンフレットPDFを見る</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>リーベクリニック</strong>
-        <p>Lieber Clinic</p>
+      <div class="footer-brand">
+        <img src="assets/logo-liebe.png" alt="リーベクリニック ロゴ">
+        <div>
+          <strong>リーベクリニック</strong>
+          <p>Liebe Clinic</p>
+        </div>
       </div>
-      <p>掲載内容はホームページ初稿用の仮情報です。</p>
+      <p>掲載内容は公開前草案です。未確定項目は最終運用に合わせて更新してください。</p>
     </footer>
 
     <script src="script.js"></script>
