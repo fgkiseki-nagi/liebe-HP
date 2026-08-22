@@ -75,7 +75,7 @@ function walkHtml(dir, relative = '') {
   const files = [];
 
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (ignored.has(entry.name)) continue;
+    if (ignored.has(entry.name) || entry.name.startsWith('._')) continue;
     const absolute = path.join(dir, entry.name);
     const nextRelative = path.join(relative, entry.name);
     if (entry.isDirectory()) files.push(...walkHtml(absolute, nextRelative));
