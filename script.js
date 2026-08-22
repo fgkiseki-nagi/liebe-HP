@@ -1,43 +1,85 @@
 /* リーベクリニック 公式サイト 共通スクリプト
-   役割は3つだけ（本文はすべてHTMLに直書き。JSに依存しない）
-   1. ハンバーガーメニューの開閉（Escキー / メニュー内リンククリックで閉じる）
+   本文と主要な導線は JavaScript が無効でも利用できるよう、HTML に記載します。
+   1. モバイルナビゲーションの開閉・フォーカス管理
    2. スクロール時のヘッダー影
-   3. 画像が読み込めなかったときのフォールバック表示 */
+   3. 画像が読み込めなかったときのフォールバック表示
+   4. ヘッダーナビの現在ページ表示 */
 (function () {
   'use strict';
 
-  /* ---- 1. ハンバーガーメニュー ---- */
   var toggle = document.getElementById('navToggle');
   var nav = document.getElementById('siteNav');
+  var header = document.getElementById('siteHeader');
+  var mobileQuery = window.matchMedia('(max-width: 1199px)');
+  var bodyOverflow = null;
 
-  function setMenu(open) {
+  function isMobile() {
+    return mobileQuery.matches;
+  }
+
+  function setScrollLock(locked) {
+    if (locked) {
+      if (bodyOverflow === null) bodyOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return;
+    }
+
+    if (bodyOverflow !== null) {
+      document.body.style.overflow = bodyOverflow;
+      bodyOverflow = null;
+    }
+  }
+
+  function setMenu(open, options) {
     if (!toggle || !nav) return;
+    if (open && !isMobile()) return;
+
+    var wasOpen = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(open));
     nav.classList.toggle('is-open', open);
+    setScrollLock(open && isMobile());
+
     var label = toggle.querySelector('.visually-hidden');
     if (label) label.textContent = open ? 'メニューを閉じる' : 'メニューを開く';
+
+    if (open && !wasOpen) {
+      var firstLink = nav.querySelector('a[href]');
+      if (firstLink) firstLink.focus();
+    }
+
+    if (!open && wasOpen && options && options.restoreFocus) toggle.focus();
   }
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+      setMenu(toggle.getAttribute('aria-expanded') !== 'true', { restoreFocus: true });
     });
 
-    nav.addEventListener('click', function (e) {
-      var link = e.target.closest ? e.target.closest('a') : null;
-      if (link && window.matchMedia('(max-width: 1023px)').matches) setMenu(false);
+    nav.addEventListener('click', function (event) {
+      var link = event.target.closest ? event.target.closest('a') : null;
+      if (link && isMobile()) setMenu(false);
     });
 
-    document.addEventListener('keydown', function (e) {
-      if (e.key !== 'Escape' && e.key !== 'Esc') return;
-      if (toggle.getAttribute('aria-expanded') !== 'true') return;
-      setMenu(false);
-      toggle.focus();
+    document.addEventListener('pointerdown', function (event) {
+      if (!isMobile() || toggle.getAttribute('aria-expanded') !== 'true') return;
+      if (header && !header.contains(event.target)) setMenu(false, { restoreFocus: true });
     });
+
+    document.addEventListener('keydown', function (event) {
+      if ((event.key !== 'Escape' && event.key !== 'Esc') || toggle.getAttribute('aria-expanded') !== 'true') return;
+      setMenu(false, { restoreFocus: true });
+    });
+
+    function resetOnDesktop() {
+      if (!isMobile()) setMenu(false);
+    }
+
+    if (mobileQuery.addEventListener) mobileQuery.addEventListener('change', resetOnDesktop);
+    else mobileQuery.addListener(resetOnDesktop);
+    resetOnDesktop();
   }
 
-  /* ---- 2. ヘッダーの影 ---- */
-  var header = document.getElementById('siteHeader');
+  /* ヘッダーの影 */
   if (header) {
     var onScroll = function () {
       header.classList.toggle('is-stuck', window.scrollY > 8);
@@ -46,7 +88,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
-  /* ---- 3. 画像フォールバック（写真が無くてもレイアウトを崩さない） ---- */
+  /* 画像フォールバック（写真が無くてもレイアウトを崩さない） */
   Array.prototype.forEach.call(document.querySelectorAll('[data-photo] img'), function (img) {
     var mark = function () {
       var wrap = img.closest('[data-photo]');
@@ -56,12 +98,20 @@
     img.addEventListener('error', mark);
   });
 
-  /* ---- 4. ヘッダーナビの現在ページ表示 ---- */
+  /* ヘッダーナビの現在ページ表示（子ページは親セクションを表示） */
   try {
     var here = location.pathname.replace(/index\.html$/, '');
-    Array.prototype.forEach.call(document.querySelectorAll('#siteNav a[href]'), function (a) {
-      var target = a.pathname.replace(/index\.html$/, '');
-      if (target === here) a.setAttribute('aria-current', 'page');
+    var links = document.querySelectorAll('#siteNav a[href]');
+    var currentLink = null;
+    var parentLink = null;
+
+    Array.prototype.forEach.call(links, function (link) {
+      var target = link.pathname.replace(/index\.html$/, '');
+      link.removeAttribute('aria-current');
+      if (target === here) currentLink = link;
+      if (!parentLink && target !== '/' && here.indexOf(target) === 0) parentLink = link;
     });
-  } catch (e) { /* noop */ }
+
+    (currentLink || parentLink || {}).setAttribute && (currentLink || parentLink).setAttribute('aria-current', 'page');
+  } catch (error) { /* Navigation remains usable if URL parsing is unavailable. */ }
 })();

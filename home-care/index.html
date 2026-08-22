@@ -23,8 +23,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
 <link rel="stylesheet" href="../styles.css">
 <script type="application/ld+json">
 {
@@ -222,40 +221,9 @@
 
 <a class="skip-link" href="#main">本文へ移動</a>
 
-<!-- ===== アイコンスプライト（assets/icons/*.svg 由来。<svg class="icon"><use href="#i-home-visit"/></svg> で使う） ===== -->
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false"><defs>
-  <symbol id="i-calendar" viewBox="0 0 48 48"><rect x="6" y="11" width="36" height="31" rx="3"/><path d="M6 20h36"/><path d="M16 5v9M32 5v9"/><circle cx="18" cy="30" r="2.6" fill="currentColor" stroke="none"/><circle cx="30" cy="30" r="2.6" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-car-visit" viewBox="0 0 48 48"><path d="M6 34v-6l4-10a3 3 0 0 1 2.8-2h22.4a3 3 0 0 1 2.8 2l4 10v6"/><path d="M6 34h36"/><path d="M11 22h26"/><circle cx="15" cy="36" r="3.5"/><circle cx="33" cy="36" r="3.5"/><path d="M24 25v5M21.5 27.5h5"/></symbol>
-  <symbol id="i-chat" viewBox="0 0 48 48"><path d="M43 29a5 5 0 0 1-5 5H16l-9 7V12a5 5 0 0 1 5-5h26a5 5 0 0 1 5 5z"/><path d="M16 17h16M16 24h11"/></symbol>
-  <symbol id="i-check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="m15.5 24.5 6 6 11-12"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 13v11l7.5 4.5"/></symbol>
-  <symbol id="i-doctor" viewBox="0 0 48 48"><circle cx="24" cy="12" r="7"/><path d="M8 42v-2c0-8 7-13 16-13s16 5 16 13v2"/><path d="M18 28.5 24 36l6-7.5"/><path d="M32 33v5M29.5 35.5h5"/></symbol>
-  <symbol id="i-document" viewBox="0 0 48 48"><path d="M12 4h16l8 8v31a1 1 0 0 1-1 1H13a1 1 0 0 1-1-1z"/><path d="M28 4v8h8"/><path d="M18 24h12M18 30h12M18 36h8"/></symbol>
-  <symbol id="i-emergency" viewBox="0 0 48 48"><path d="M24 4 39 10v12c0 10-6.5 17-15 21C15.5 39 9 32 9 22V10z"/><path d="M24 16v13M17.5 22.5h13"/></symbol>
-  <symbol id="i-facility" viewBox="0 0 48 48"><path d="M24 4v7M20.5 7.5h7"/><path d="M8 43V15a1 1 0 0 1 1-1h30a1 1 0 0 1 1 1v28"/><path d="M4 43h40"/><path d="M15 21h4M29 21h4M15 28h4M29 28h4"/><path d="M20 43v-8a4 4 0 0 1 8 0v8"/></symbol>
-  <symbol id="i-family" viewBox="0 0 48 48"><circle cx="17" cy="15" r="6"/><circle cx="34" cy="18" r="4.8"/><path d="M5 41c0-6.6 5.4-11.5 12-11.5S29 34.4 29 41"/><path d="M31 41c.2-5.2 3.6-8.7 8-8.7 1.8 0 3.4.5 4.8 1.5"/></symbol>
-  <symbol id="i-fax" viewBox="0 0 48 48"><path d="M13 19V7h22v12"/><rect x="5" y="19" width="38" height="14" rx="3"/><path d="M13 28h22v13H13z"/><path d="M36 24h2"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 41S6 30 6 18.8A9.6 9.6 0 0 1 24 14a9.6 9.6 0 0 1 18 4.8C42 30 24 41 24 41z"/></symbol>
-  <symbol id="i-home-visit" viewBox="0 0 48 48"><path d="M5 22 24 7l19 15"/><path d="M10 20v20a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V20"/><path d="M24 26v10M19 31h10"/></symbol>
-  <symbol id="i-hospital" viewBox="0 0 48 48"><rect x="7" y="14" width="34" height="28" rx="3"/><path d="M3 42h42M24 5v7M20.5 8.5h7M24 21v9M19.5 25.5h9"/><path d="M19 42v-8h10v8"/></symbol>
-  <symbol id="i-info" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 22v11M24 15.5v.5"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 48 48"><rect x="4" y="10" width="40" height="28" rx="4"/><path d="m6 13 18 13L42 13"/></symbol>
-  <symbol id="i-map-pin" viewBox="0 0 48 48"><path d="M24 44s14-13.5 14-25a14 14 0 1 0-28 0c0 11.5 14 25 14 25z"/><circle cx="24" cy="18.5" r="5.5"/></symbol>
-  <symbol id="i-medication" viewBox="0 0 48 48"><rect x="4" y="15" width="40" height="20" rx="3"/> <path d="M4 21h40M14 21v14M24 21v14M34 21v14"/> <rect x="6.5" y="26.5" width="5" height="3" rx="1.5" fill="currentColor" stroke="none"/> <rect x="16.5" y="26.5" width="5" height="3" rx="1.5" fill="currentColor" stroke="none"/> <rect x="26.5" y="26.5" width="5" height="3" rx="1.5" fill="currentColor" stroke="none"/> <rect x="36.5" y="26.5" width="5" height="3" rx="1.5" fill="currentColor" stroke="none"/> <path d="M12 15v-4M36 15v-4"/></symbol>
-  <symbol id="i-mitori-hands" viewBox="0 0 48 48"><path d="M24 30c-5.4-4.4-8.6-6.9-8.6-10.2A4.8 4.8 0 0 1 24 16.9a4.8 4.8 0 0 1 8.6 2.9c0 3.3-3.2 5.8-8.6 10.2z"/><path d="M5 43v-7.5a3.8 3.8 0 0 1 6.5-2.7L17 38.5"/><path d="M11 35.5v-3.2"/><path d="M43 43v-7.5a3.8 3.8 0 0 0-6.5-2.7L31 38.5"/><path d="M37 35.5v-3.2"/></symbol>
-  <symbol id="i-network" viewBox="0 0 48 48"><circle cx="24" cy="9" r="5"/><circle cx="9" cy="37" r="5"/><circle cx="39" cy="37" r="5"/><path d="M20.5 13.4 12.5 32.6M27.5 13.4l8 19.2M14 37h20"/></symbol>
-  <symbol id="i-nurse" viewBox="0 0 48 48"><path d="M17 12h14l-2.2-6.5a1 1 0 0 0-1-.7H20.2a1 1 0 0 0-1 .7z"/><path d="M24 6.5v3M22.5 8h3"/><circle cx="24" cy="19" r="6.5"/><path d="M8 42v-1.5c0-7.5 7-12.5 16-12.5s16 5 16 12.5V42"/></symbol>
-  <symbol id="i-oncall-night" viewBox="0 0 48 48"><path d="M41 30A17 17 0 1 1 19 7 14 14 0 0 0 41 30z"/><path d="M33 8v5M30.5 10.5h5"/></symbol>
-  <symbol id="i-online-care" viewBox="0 0 48 48"><rect x="13" y="4" width="22" height="40" rx="3"/><path d="M13 11h22M13 37h22"/><path d="M24 18v12M18 24h12"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 48 48"><path d="M13 6h7l3.5 9-4.5 3.5a20 20 0 0 0 10.5 10.5L33 24.5l9 3.5v7a4 4 0 0 1-4.4 4C20.5 37 11 27.5 9 10.4A4 4 0 0 1 13 6z"/></symbol>
-  <symbol id="i-photo" viewBox="0 0 48 48"><rect x="5" y="10" width="38" height="28" rx="4"/><path d="m6 31 10-8.5 7 5.5 8-7.5 12 10.5"/><circle cx="16.5" cy="18.5" r="3"/></symbol>
-  <symbol id="i-snowflake" viewBox="0 0 48 48"><path d="M24 4.5v39M6.5 14 41.5 34M41.5 14 6.5 34"/> <path d="M20 9 24 4.5 28 9M20 39l4 4.5 4-4.5"/> <path d="M36.7 12.7 41.5 14l-1.3 4.8M11.3 35.3 6.5 34l1.3-4.8"/> <path d="M11.3 12.7 6.5 14l1.3 4.8M36.7 35.3 41.5 34l-1.3-4.8"/></symbol>
-  <symbol id="i-star" viewBox="0 0 48 48"><path d="m24 6 5.6 11.4L42 19.2l-9 8.8 2.1 12.4L24 34.5 12.9 40.4 15 28 6 19.2l12.4-1.8z"/></symbol>
-  <symbol id="i-stethoscope" viewBox="0 0 48 48"><circle cx="14" cy="6" r="2.5"/><circle cx="32" cy="6" r="2.5"/><path d="M14 9v8a10 10 0 0 0 20 0V9"/><path d="M24 27v5a7 7 0 0 0 14 0v-5"/><circle cx="38" cy="21" r="5"/></symbol>
-  <symbol id="i-yen" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="m16 15 8 10 8-10M24 25v13M18 27h12M18 32h12"/></symbol>
-</defs></svg>
+<!-- 共通アイコンは assets/icons/sprite.svg を参照 -->
 
-<!-- ===== ヘッダー ===== -->
+<!-- ===== 共通ヘッダー（tools/sync-shared.mjs で同期） ===== -->
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a class="brand" href="../" aria-label="リーベクリニック トップページ">
@@ -274,24 +242,21 @@
     <nav class="site-nav" id="siteNav" aria-label="主要ナビゲーション">
       <a href="../home-care/">訪問診療</a>
       <a href="../area/">対応エリア</a>
-      <a href="../home-care/fee/">費用</a>
-      <a href="../home-care/flow/">流れ</a>
       <a href="../facilities/">施設の方へ</a>
       <a href="../partners/" aria-label="ケアマネジャー・医療機関の方へ">ケアマネ・病院</a>
       <a href="../about/">院長紹介</a>
       <a href="../faq/" aria-label="よくあるご質問">FAQ</a>
-      <a href="../column/">コラム</a>
       <a href="../contact/">お問い合わせ</a>
     </nav>
 
     <a class="header-tel" href="tel:0166743774" aria-label="電話をかける 0166-74-3774">
-      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>
+      <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-phone"/></svg>
       <span class="num tnum">0166-74-3774</span>
     </a>
   </div>
 </header>
 
-<!-- ===== パンくず（トップページでは丸ごと削除する） ===== -->
+<!-- ===== パンくず ===== -->
 <nav class="breadcrumb" aria-label="パンくずリスト">
   <div class="container">
     <ol>
@@ -305,14 +270,14 @@
   <section class="page-hero page-hero--photo">
     <div class="container">
       <div>
-        <p class="eyebrow">Home medical care</p>
+        <p class="eyebrow">訪問診療</p>
         <h1>訪問診療とは｜対象・往診との違い・受けられる医療</h1>
-        <p class="lead">通院が難しくなった方のご自宅や施設へ、医師が計画的に伺います。リーベクリニックは旭川市を中心に、名寄市・上川エリア（道北）へも訪問しています。</p>
+        <p class="lead">通院が難しくなった方のご自宅や施設へ、医師が計画的に伺います。リーベクリニックは旭川市を中心に、名寄市・士別市・剣淵町・羽幌町へ定期的に訪問しています。</p>
       </div>
       <figure class="figure mb-0">
         <div class="photo ar-4-3" data-photo>
           <img src="../assets/img/hokkaido-lavender-01.jpg" alt="山並みを望む北海道のラベンダー畑" width="1200" height="900" fetchpriority="high" decoding="async">
-          <span class="photo-fallback"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+          <span class="photo-fallback"><svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-stethoscope"/></svg></span>
         </div>
         <figcaption>ご自宅での診察</figcaption>
       </figure>
@@ -335,7 +300,7 @@
 
       <nav class="toc" aria-labelledby="toc-title">
         <p class="toc-title" id="toc-title">
-          <svg class="icon icon--sm" aria-hidden="true"><use href="#i-document"/></svg>このページの内容
+          <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-document"/></svg>このページの内容
         </p>
         <ol>
           <li><a href="#toha-h">訪問診療とは何ですか？（30秒でわかる要約）</a></li>
@@ -398,7 +363,7 @@
       </div>
 
       <div class="callout callout--warn">
-        <svg class="icon" aria-hidden="true"><use href="#i-oncall-night"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-oncall-night"/></svg>
         <div class="callout-body">
           <span class="callout-title">夜間・休日のご連絡について</span>
           <p>夜間・休日は電話でご相談いただけるオンコール体制をとっています。主治医への直通をお約束するものではありません。施設にお住まいの方は、まず施設スタッフへお声がけください。緊急性が高いと感じる場合は、119番を優先してください。</p>
@@ -434,12 +399,12 @@
       <p class="table-note">※ 2026年8月時点の当院の体制です。対応の可否は病状・療養環境により個別に判断します。</p>
 
       <div class="callout callout--emergency">
-        <svg class="icon" aria-hidden="true"><use href="#i-emergency"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-emergency"/></svg>
         <div class="callout-body">
           <h3 id="kyukyu-119">119番を優先していただきたい症状</h3>
           <p>呼びかけに反応しない／息が苦しい、呼吸の様子が明らかにおかしい／突然ろれつが回らない、手足が動かない／胸が締め付けられるような強い痛みがある／大量出血、吐血、下血がある。迷うほど緊急性が高いと感じる場合は、患者さんの安全を最優先に救急要請をしてください。</p>
           <a class="btn-tel119" href="tel:119" aria-label="119番に電話をかける">
-            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>119番へ発信
+            <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-phone"/></svg>119番へ発信
           </a>
         </div>
       </div>
@@ -471,46 +436,46 @@
   <section class="section section--beige" aria-labelledby="kodomo-page">
     <div class="container">
       <div class="head head--center head--green">
-        <p class="eyebrow">Guide</p>
+        <p class="eyebrow">関連ページ</p>
         <h2 id="kodomo-page">目的別のご案内（費用・流れ・オンライン診療・看取り）</h2>
         <p class="lead">知りたいことから読み進められるよう、テーマごとにページを分けています。</p>
       </div>
 
       <div class="related-grid">
         <a class="related-card" href="../home-care/fee/">
-          <svg class="icon" aria-hidden="true"><use href="#i-yen"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-yen"/></svg>
           <b>訪問診療の費用の目安と内訳</b>
           <span>医療保険の負担割合、在宅医療の管理料等、介護保険の居宅療養管理指導、高額療養費制度の考え方をまとめています。</span>
         </a>
         <a class="related-card" href="../home-care/flow/">
-          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-calendar"/></svg>
           <b>訪問診療の始め方（相談から診療開始まで）</b>
           <span>お電話でのご相談から、事前相談・面談、ご契約、初回訪問までの4ステップとご用意いただくものをご案内します。</span>
         </a>
         <a class="related-card" href="../home-care/online/">
-          <svg class="icon" aria-hidden="true"><use href="#i-online-care"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-online-care"/></svg>
           <b>オンライン診療について</b>
           <span>訪問診療を補うオンライン診療の対象・流れ・必要なもの、厚生労働省の指針にもとづく注意事項をご案内します。</span>
         </a>
         <a class="related-card" href="../home-care/end-of-life/">
-          <svg class="icon" aria-hidden="true"><use href="#i-mitori-hands"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-mitori-hands"/></svg>
           <b>在宅・施設での看取りとACP（人生会議）</b>
           <span>ACPやDNARの話し合い、急変時の連絡、お看取りの当日の流れ、その後の手続きをご案内します。</span>
         </a>
         <a class="related-card" href="../area/">
-          <svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>
-          <b>訪問診療の対応エリア（旭川市・名寄市・道北）</b>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-map-pin"/></svg>
+          <b>訪問診療の対応エリア（旭川市＋道北4市町）</b>
           <span>旭川市を中心とした対応エリアの区分と、その他の北海道内からのご相談についてご案内します。</span>
         </a>
         <a class="related-card" href="../facilities/">
-          <svg class="icon" aria-hidden="true"><use href="#i-facility"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-facility"/></svg>
           <b>施設・法人の方へ（訪問診療の導入）</b>
           <span>有料老人ホーム・グループホーム・障がい者施設への訪問診療の導入手順と役割分担をご案内します。</span>
         </a>
       </div>
 
-      <ul class="chips" style="margin-top:var(--sp-6)">
-        <li><a class="chip chip--primary" href="../area/asahikawa/"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>旭川市</a></li>
+      <ul class="chips content-offset">
+        <li><a class="chip chip--primary" href="../area/asahikawa/"><svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-star"/></svg>旭川市</a></li>
         <li><a class="chip" href="../area/nayoro/">名寄市</a></li>
         <li><a class="chip" href="../area/kamikawa-douhoku/">上川・道北</a></li>
         <li><a class="chip" href="../area/hokkaido/">北海道内はご相談ください</a></li>
@@ -521,7 +486,7 @@
   <section class="section" aria-labelledby="faq">
     <div class="container">
       <div class="head">
-        <p class="eyebrow">FAQ</p>
+        <p class="eyebrow">よくあるご質問</p>
         <h2 id="faq">よくあるご質問</h2>
         <p class="lead">ご相談の多い質問をまとめました。さらに詳しい質問は<a href="../faq/">よくあるご質問の一覧</a>をご覧ください。</p>
       </div>
@@ -549,7 +514,7 @@
         </details>
       </div>
 
-      <p style="margin-top:var(--sp-6)"><a href="../">トップページへ戻る</a></p>
+      <p class="content-offset"><a href="../">トップページへ戻る</a></p>
     </div>
   </section>
 
@@ -557,7 +522,7 @@
   <!-- ===== 監修・公開日ブロック ===== -->
   <div class="container">
     <p class="byline">
-      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-doctor"/></svg>
+      <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-doctor"/></svg>
       <span>監修：リーベクリニック 院長 <strong>山崎 清裕</strong>（<a href="../about/">経歴を見る</a>）</span>
       <span>公開日：<time datetime="2026-08-22">2026年8月22日</time></span>
       <span>最終更新日：<time datetime="2026-08-22">2026年8月22日</time></span>
@@ -565,39 +530,40 @@
   </div>
 </main>
 
-<!-- ===== ページ末尾CTA帯 ===== -->
+<!-- ===== ページ末尾CTA帯（ページ種別ごとに文言を同期） ===== -->
 <section class="cta-band" aria-labelledby="cta-h">
   <div class="container cta-inner">
     <div>
-      <h2 id="cta-h">まずはお電話でご相談ください</h2>
-      <p>訪問診療のご相談、施設からのご相談、退院後の受け入れ相談、地域連携のご連絡を承ります。ご住所と現在の状況をお聞かせいただければ、対応できるかを個別にご案内します。</p>
+      <p class="eyebrow">訪問診療のご相談</p>
+      <h2 id="cta-h">訪問診療を検討されている方へ</h2>
+      <p>通院の難しさ、ご住所、現在の治療やお薬についてお聞きし、訪問診療が合うかどうかと次の準備をご案内します。</p>
     </div>
     <div class="cta-tel">
-      <span class="label">お問い合わせ・ご相談</span>
+      <span class="label">訪問診療のご相談</span>
       <a class="num" href="tel:0166743774" aria-label="電話をかける 0166-74-3774">
-        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>0166-74-3774
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-phone"/></svg>0166-74-3774
       </a>
       <div class="cta-sub">
         <span>FAX：<span class="tnum">0166-74-3240</span></span>
         <a href="mailto:liebe@aiseikai.care">liebe@aiseikai.care</a>
-        <a href="../area/">対応エリアを確認する</a>
+        <a href="../home-care/flow/">ご利用までの流れ</a>
       </div>
-      <p class="cta-note">お電話で受け付けます（受付時間はお問い合わせください）。メールは緊急のご相談には使用しないでください。</p>
+      <p class="cta-note">新規のご相談はお電話で受け付けます（受付時間はお問い合わせください）。メールは緊急のご相談には使用しないでください。</p>
     </div>
   </div>
 </section>
 
-<!-- ===== フッター上の固定注記（全ページ共通・削除しない） ===== -->
+<!-- ===== 夜間・緊急時の共通案内 ===== -->
 <div class="notice-oncall">
   <div class="container">
     <p>
-      <svg class="icon" aria-hidden="true"><use href="#i-oncall-night"/></svg>
-      <span>夜間・休日は電話でご相談いただけるオンコール体制をとっています（主治医への直通をお約束するものではありません。緊急時は119番を優先してください）。</span>
+      <svg class="icon" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-oncall-night"/></svg>
+      <span>夜間・休日は電話でご相談いただけるオンコール体制です。主治医への直通や訪問を保証するものではありません。緊急時は119番を優先してください。<a href="../faq/#yakan">詳しい連絡方法</a></span>
     </p>
   </div>
 </div>
 
-<!-- ===== フッター ===== -->
+<!-- ===== 共通フッター（tools/sync-shared.mjs で同期） ===== -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
@@ -634,19 +600,19 @@
           <li><a href="../privacy/">プライバシーポリシー</a></li>
         </ul>
       </nav>
-      <p style="font-size:.8125rem;opacity:.9">当サイトの地図表示にはGoogle Mapsを使用しています。掲載内容は一般的な説明であり、個別の診断・治療方針を示すものではありません。</p>
+      <p class="footer-legal">当サイトの地図表示にはGoogle Mapsを使用しています。掲載内容は一般的な説明であり、個別の診断・治療方針を示すものではありません。</p>
       <p class="copyright">© 一般社団法人 愛清会 リーベクリニック</p>
     </div>
   </div>
 </footer>
 
-<!-- ===== モバイル固定電話バー ===== -->
+<!-- ===== モバイル固定相談バー ===== -->
 <nav class="mobile-bar" aria-label="お問い合わせ（固定）">
   <a class="tel" href="tel:0166743774" aria-label="電話をかける 0166-74-3774">
-    <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>電話で相談する
+    <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-phone"/></svg>電話で相談する
   </a>
   <a class="sub" href="../area/">
-    <svg class="icon icon--sm" aria-hidden="true"><use href="#i-map-pin"/></svg>対応エリア
+    <svg class="icon icon--sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-map-pin"/></svg>対応エリア
   </a>
 </nav>
 

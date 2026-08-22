@@ -1,0 +1,32 @@
+<!-- ===== 共通ヘッダー（tools/sync-shared.mjs で同期） ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="{{root}}" aria-label="リーベクリニック トップページ">
+      <img src="{{root}}assets/logo-liebe.png" width="235" height="185" alt="">
+      <span>
+        <span class="brand-name">リーベクリニック</span>
+        <span class="brand-sub">LIEBE CLINIC</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">メニューを開く</span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="主要ナビゲーション">
+      <a href="{{root}}home-care/">訪問診療</a>
+      <a href="{{root}}area/">対応エリア</a>
+      <a href="{{root}}facilities/">施設の方へ</a>
+      <a href="{{root}}partners/" aria-label="ケアマネジャー・医療機関の方へ">ケアマネ・病院</a>
+      <a href="{{root}}about/">院長紹介</a>
+      <a href="{{root}}faq/" aria-label="よくあるご質問">FAQ</a>
+      <a href="{{root}}contact/">お問い合わせ</a>
+    </nav>
+
+    <a class="header-tel" href="tel:0166743774" aria-label="電話をかける 0166-74-3774">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="{{root}}assets/icons/sprite.svg#i-phone"/></svg>
+      <span class="num tnum">0166-74-3774</span>
+    </a>
+  </div>
+</header>
