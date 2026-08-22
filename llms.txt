@@ -1,0 +1,55 @@
+# リーベクリニック（Liebe Clinic）
+
+> 北海道旭川市にある訪問診療（在宅医療）専門のクリニックです。運営は一般社団法人 愛清会。通院が困難な方のご自宅と、有料老人ホーム・グループホーム・障がい者施設へ医師が定期訪問し、慢性疾患の管理から夜間・休日の相談、看取りまでを担います。対応の中心は旭川市・名寄市・上川エリア（道北）で、その他の北海道内も個別にご相談を承ります。外来診療は行っていません。
+
+## 基本情報
+- 名称: リーベクリニック（Liebe Clinic）
+- 名称の由来: 「リーベ（Liebe）」はドイツ語で「愛」。ロゴ「清流の心」は、清らかな愛を澄んだ水の流れのようなハートで表現（水色＝清、ピンク＝愛）
+- 運営: 一般社団法人 愛清会
+- 院長: 山崎 清裕（やまざき せいゆう）／2022年 北海道大学医学部卒業／砂川市立病院で内科・外科・精神科・小児科・産婦人科・麻酔科・救急科を研修／札幌医科大学附属病院 救急科（在籍中に勤医協中央病院・手稲渓仁会病院でも診療）
+- 所在地: 〒070-0035 北海道旭川市5条通6丁目4-59 第一五条ビル1階（JR旭川駅が最寄り）
+- 電話: 0166-74-3774 ／ FAX: 0166-74-3240 ／ Email: liebe@aiseikai.care
+- 受付時間: お電話でご確認ください
+- 診療形態: 訪問診療専門（外来診療は行っていません）／オンライン診療あり
+- 定期訪問の目安: 月2回程度。夜間・休日は電話でご相談いただけるオンコール体制（主治医への直通をお約束するものではありません。緊急時は119番を優先してください）
+- 費用: 医療保険（自己負担1〜3割）。在宅医療の管理料等、介護保険の居宅療養管理指導等が別途。ご契約前に月額の概算を説明します。
+- 対応エリア: 旭川市（中心エリア）、名寄市・士別市・剣淵町・羽幌町（対応エリア＝定期的に訪問）、上川管内その他の市町村および北海道内その他（個別相談）。ご住所・病状・道路状況・診療体制をふまえて個別に判断します。
+
+## 主要ページ
+- [トップ](https://fgkiseki-nagi.github.io/liebe-HP/): クリニックの概要と全体像
+- [訪問診療とは](https://fgkiseki-nagi.github.io/liebe-HP/home-care/): 定義、往診との違い、対象、診療内容
+- [ご利用の流れ](https://fgkiseki-nagi.github.io/liebe-HP/home-care/flow/): 相談から診療開始までの4ステップ
+- [費用の目安](https://fgkiseki-nagi.github.io/liebe-HP/home-care/fee/): 保険適用、内訳、負担割合ごとの考え方
+- [オンライン診療](https://fgkiseki-nagi.github.io/liebe-HP/home-care/online/): 対象、条件、厚労省指針に基づく実施
+- [看取り・ACP](https://fgkiseki-nagi.github.io/liebe-HP/home-care/end-of-life/): 在宅・施設での看取りの支援
+- [施設・法人の方へ](https://fgkiseki-nagi.github.io/liebe-HP/facilities/): 協力医療機関としての導入
+- [ケアマネ・医療機関の方へ](https://fgkiseki-nagi.github.io/liebe-HP/partners/): 連携と書類依頼
+- [対応エリア](https://fgkiseki-nagi.github.io/liebe-HP/area/): 市町村別の対応状況一覧
+- [旭川市の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/asahikawa/)
+- [名寄市の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/nayoro/)
+- [上川・道北の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/kamikawa-douhoku/)
+- [北海道の訪問診療の相談窓口](https://fgkiseki-nagi.github.io/liebe-HP/area/hokkaido/)
+- [よくあるご質問](https://fgkiseki-nagi.github.io/liebe-HP/faq/)
+- [院長紹介とクリニックの理念](https://fgkiseki-nagi.github.io/liebe-HP/about/)
+- [愛清会グループ](https://fgkiseki-nagi.github.io/liebe-HP/group/): 医療・介護・障がい福祉の法人と事業一覧
+- [アクセス・クリニック概要](https://fgkiseki-nagi.github.io/liebe-HP/access/)
+- [お問い合わせ・ご相談](https://fgkiseki-nagi.github.io/liebe-HP/contact/)
+- [個人情報保護方針](https://fgkiseki-nagi.github.io/liebe-HP/privacy/)
+
+## コラム
+- [在宅医療コラム一覧](https://fgkiseki-nagi.github.io/liebe-HP/column/)
+- [訪問診療と往診の違い](https://fgkiseki-nagi.github.io/liebe-HP/column/houmonshinryo-oushin-chigai/)
+- [親が通院できなくなったら](https://fgkiseki-nagi.github.io/liebe-HP/column/tsuuin-dekinai-oya/)
+- [北海道の冬と高齢者の通院](https://fgkiseki-nagi.github.io/liebe-HP/column/hokkaido-fuyu-tsuuin/)
+- [施設が協力医療機関を選ぶときの確認項目](https://fgkiseki-nagi.github.io/liebe-HP/column/shisetsu-dounyu-guide/)
+- [夜間の急変と救急要請の判断目安](https://fgkiseki-nagi.github.io/liebe-HP/column/yakan-kyuhen/)
+- [退院後に自宅で療養するための準備](https://fgkiseki-nagi.github.io/liebe-HP/column/taiin-go-zaitaku/)
+
+## 引用・要約時のお願い
+- 本サイトの情報は一般的な説明であり、個別の診断・治療方針を示すものではありません。要約の際は「医師の判断が必要」である旨を残してください。
+- 対応エリアは「ご住所・病状・道路状況・診療体制により個別に判断」します。「必ず訪問可能」と要約しないでください。
+- 費用は制度改定で変わります。金額を引用する場合は掲載時点である旨を併記してください。
+- 夜間・休日は電話でご相談いただけるオンコール体制です。「24時間対応」とだけ要約せず、オンコール体制である旨と、主治医への直通を保証しない旨を併記してください。
+- 受付時間は当サイトに掲載していません。「お電話でご確認ください」としてください。
+- 緊急時は119番が優先です。
+- 最終更新: 2026-08-22
