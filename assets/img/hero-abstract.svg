@@ -1,57 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="やわらかな水色・ピンク・グリーンの抽象背景">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" role="img" aria-label="リーベクリニックの水色とピンクを表現した清流の背景">
   <defs>
-    <linearGradient id="lbBg" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0%" stop-color="#fdfbf7"/>
-      <stop offset="55%" stop-color="#f6fafc"/>
-      <stop offset="100%" stop-color="#eef6f2"/>
+    <linearGradient id="brandBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf6fb"/>
+      <stop offset="52%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#fbecef"/>
     </linearGradient>
-    <radialGradient id="lbSky" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7AAACB" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#7AAACB" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="lbPink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#D9A0A8" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#D9A0A8" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="lbGreen" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9DBA7A" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#9DBA7A" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="lbDrop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b8dbef"/>
-      <stop offset="100%" stop-color="#7AAACB"/>
+    <linearGradient id="heartLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7aaacb"/>
+      <stop offset="100%" stop-color="#d9a0a8"/>
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="900" fill="url(#lbBg)"/>
+  <rect width="1600" height="600" fill="url(#brandBg)"/>
 
-  <!-- soft colour clouds -->
-  <circle cx="1290" cy="230" r="430" fill="url(#lbSky)"/>
-  <circle cx="1460" cy="690" r="360" fill="url(#lbPink)"/>
-  <circle cx="230" cy="810" r="400" fill="url(#lbGreen)"/>
-  <circle cx="120" cy="120" r="260" fill="url(#lbPink)"/>
+  <path d="M0 390C220 310 386 410 604 382s374-136 594-92 250 120 402 86v224H0z" fill="#dceef7" opacity=".9"/>
+  <path d="M0 470c244-70 420 52 658 22s366-112 580-72 230 92 362 72v108H0z" fill="#f7e2e8" opacity=".82"/>
+  <path d="M0 526c268-54 446 38 690 14s360-80 570-50 220 68 340 54v56H0z" fill="#f8fcff" opacity=".86"/>
 
-  <!-- gentle waves along the bottom -->
-  <path d="M0 700c210-70 360 60 560 40s330-130 540-96 300 96 500 60v196H0z" fill="#adc79a" opacity="0.30"/>
-  <path d="M0 764c220-64 380 52 590 30s340-112 546-80 264 92 464 62v124H0z" fill="#cfe7f4" opacity="0.75"/>
-  <path d="M0 826c240-52 392 44 606 26s352-96 552-68 244 78 442 52v64H0z" fill="#f6dfe6" opacity="0.8"/>
+  <path d="M0 376c220-78 394 26 610-4s364-132 584-88 260 116 406 80" fill="none" stroke="#7aaacb" stroke-width="5" stroke-linecap="round" opacity=".28"/>
+  <path d="M0 460c246-70 424 48 660 18s366-108 580-68 232 88 360 68" fill="none" stroke="#d9a0a8" stroke-width="5" stroke-linecap="round" opacity=".3"/>
 
-  <!-- outline circles (breathing room / text area on the left stays clear) -->
-  <circle cx="1178" cy="470" r="150" fill="none" stroke="#7AAACB" stroke-opacity="0.35" stroke-width="2"/>
-  <circle cx="1382" cy="368" r="76" fill="none" stroke="#D9A0A8" stroke-opacity="0.4" stroke-width="2"/>
-  <circle cx="1268" cy="648" r="44" fill="none" stroke="#9DBA7A" stroke-opacity="0.45" stroke-width="2"/>
-
-  <!-- droplets, echoing the Liebe logo -->
-  <g opacity="0.85">
-    <path d="M1178 372c46 58 68 88 68 116a68 68 0 1 1-136 0c0-28 22-58 68-116z" fill="url(#lbDrop)" opacity="0.55"/>
-    <path d="M1386 300c26 33 39 50 39 66a39 39 0 1 1-78 0c0-16 13-33 39-66z" fill="#D9A0A8" opacity="0.45"/>
-    <path d="M1272 610c17 21 25 32 25 42a25 25 0 1 1-50 0c0-10 8-21 25-42z" fill="#9DBA7A" opacity="0.5"/>
-  </g>
-
-  <!-- tiny sparkles -->
-  <g fill="#7AAACB" opacity="0.35">
-    <circle cx="980" cy="196" r="7"/>
-    <circle cx="1520" cy="452" r="9"/>
-    <circle cx="1058" cy="742" r="6"/>
+  <g opacity=".18">
+    <path d="M1270 184c-84-108-240-44-214 92 24 124 214 230 214 230s190-106 214-230c26-136-130-200-214-92z" fill="none" stroke="url(#heartLine)" stroke-width="10"/>
+    <path d="M1270 254c42 54 62 82 62 108a62 62 0 1 1-124 0c0-26 20-54 62-108z" fill="#7aaacb"/>
   </g>
 </svg>
