@@ -7,13 +7,20 @@
   /* ブランド（ロゴ由来） */
   --brand-blue: #7aaacb;
   --brand-blue-600: #4a84ac;
-  --brand-blue-700: #2e6489;
+  --brand-blue-700: #2f7397;
   --brand-pink: #d9a0a8;
-  --brand-pink-700: #9c4f62;
+  --brand-pink-700: #a94967;
   --brand-green: #9dba7a;
   --brand-green-700: #4e6b37;
-  --accent: #9c4f62;
-  --accent-hover: #7d394a;
+  --accent: var(--brand-pink-700);
+  --phone-bg: var(--brand-pink);
+  --phone-bg-hover: #e6b7c0;
+  --phone-line: #b97686;
+  --phone-ink: var(--ink);
+  --primary-bg: var(--brand-blue);
+  --primary-bg-hover: #9bc6dc;
+  --primary-line: var(--brand-blue-600);
+  --primary-ink: var(--ink);
 
   /* 背景（ロゴの水色とピンクを基調にした明るい面） */
   --bg-cream: #f8fcff;
@@ -192,11 +199,17 @@ li { margin-bottom: var(--sp-2); }
 .btn:hover { box-shadow: var(--sh-2); }
 .btn .ico { flex: none; }
 
-.btn--phone { background: var(--accent); color: #fff; box-shadow: var(--sh-2); }
-.btn--phone:hover { background: var(--accent-hover); box-shadow: var(--sh-3); }
-.btn--primary { background: var(--brand-blue-700); color: #fff; box-shadow: var(--sh-2); }
-.btn--primary:hover { background: var(--brand-blue-700); box-shadow: var(--sh-3); }
-.btn--outline { background: var(--surface); color: var(--brand-blue-700); border-color: var(--brand-blue-700); }
+.btn--phone {
+  background: var(--phone-bg); color: var(--phone-ink);
+  border-color: var(--phone-line); box-shadow: var(--sh-2);
+}
+.btn--phone:hover { background: var(--phone-bg-hover); box-shadow: var(--sh-3); }
+.btn--primary {
+  background: var(--primary-bg); color: var(--primary-ink);
+  border-color: var(--primary-line); box-shadow: var(--sh-2);
+}
+.btn--primary:hover { background: var(--primary-bg-hover); box-shadow: var(--sh-3); }
+.btn--outline { background: var(--surface); color: var(--brand-blue-700); border-color: var(--primary-line); }
 .btn--outline:hover { background: var(--tile-blue); }
 .btn--quiet { background: transparent; color: var(--brand-blue-700); border-color: var(--line-strong); }
 .btn--quiet:hover { background: var(--surface); }
@@ -291,10 +304,11 @@ li { margin-bottom: var(--sp-2); }
   .header-tel {
     display: inline-flex; align-items: center; gap: 8px;
     min-height: 48px; padding: 8px 18px; border-radius: 12px;
-    background: var(--accent); color: #fff; font-weight: 700; text-decoration: none;
+    background: var(--phone-bg); color: var(--phone-ink);
+    border: 1px solid var(--phone-line); font-weight: 700; text-decoration: none;
     white-space: nowrap; font-size: .9375rem;
   }
-  .header-tel:hover { background: var(--accent-hover); }
+  .header-tel:hover { background: var(--phone-bg-hover); }
 }
 @media (min-width: 1400px) {
   .site-nav { gap: var(--sp-2); }
@@ -640,7 +654,8 @@ li { margin-bottom: var(--sp-2); }
 .step-num {
   display: inline-flex; align-items: center; justify-content: center;
   width: 44px; height: 44px; border-radius: var(--r-full);
-  background: var(--brand-blue-700); color: #fff;
+  background: var(--primary-bg); color: var(--primary-ink);
+  border: 1px solid var(--primary-line);
   font-family: var(--font-head); font-weight: 700; font-size: 1.25rem;
   margin-bottom: var(--sp-3);
 }
@@ -690,7 +705,7 @@ li { margin-bottom: var(--sp-2); }
   border-radius: var(--r-md); padding: var(--sp-5);
   display: flex; flex-direction: column; gap: var(--sp-2);
 }
-.contact-card:first-child { border-color: var(--accent); box-shadow: var(--sh-1); }
+.contact-card:first-child { border-color: var(--brand-pink); box-shadow: var(--sh-1); }
 .contact-card .card-ico { margin-bottom: 0; }
 .contact-card .label { font-size: .875rem; font-weight: 700; color: var(--ink-muted); }
 .contact-card .value {
@@ -752,7 +767,10 @@ li { margin-bottom: var(--sp-2); }
   min-height: 52px; border-radius: 12px;
   font-weight: 700; font-size: .9375rem; text-decoration: none;
 }
-.mobile-bar .tel { background: var(--accent); color: #fff; }
+.mobile-bar .tel {
+  background: var(--phone-bg); color: var(--phone-ink);
+  border: 1px solid var(--phone-line);
+}
 .mobile-bar .sub { background: var(--tile-blue); color: var(--brand-blue-700); }
 @media (min-width: 1200px) { .mobile-bar { display: none; } }
 @media (max-width: 1199px) { body { padding-bottom: 84px; } }
@@ -826,7 +844,7 @@ li { margin-bottom: var(--sp-2); }
 /* ---------- 結論ブロック .summary ---------- */
 .summary {
   background: var(--tile-blue);
-  border-left: 6px solid var(--brand-blue-700);
+  border-left: 6px solid var(--brand-blue);
   border-radius: 0 var(--r-lg) var(--r-lg) 0;
   padding: var(--sp-5); margin: 0 0 var(--sp-6);
 }
@@ -843,9 +861,9 @@ li { margin-bottom: var(--sp-2); }
   width: 12px; height: 7px; border-left: 3px solid var(--brand-blue-700);
   border-bottom: 3px solid var(--brand-blue-700); transform: rotate(-45deg);
 }
-.summary--green { background: var(--tile-blue); border-left-color: var(--brand-blue-700); }
+.summary--green { background: var(--tile-blue); border-left-color: var(--brand-blue); }
 .summary--green li::before { border-color: var(--brand-blue-700); }
-.summary--pink { background: var(--tile-pink); border-left-color: var(--brand-pink-700); }
+.summary--pink { background: var(--tile-pink); border-left-color: var(--brand-pink); }
 .summary--pink li::before { border-color: var(--brand-pink-700); }
 @media (min-width: 768px) { .summary { padding: var(--sp-6) var(--sp-7); } }
 
