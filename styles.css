@@ -13,9 +13,9 @@
   --brand-green: #9dba7a;
   --brand-green-700: #4e6b37;
   --accent: var(--brand-pink-700);
-  --phone-bg: var(--brand-pink);
-  --phone-bg-hover: #e6b7c0;
-  --phone-line: #b97686;
+  --phone-bg: #ffd6e1;
+  --phone-bg-hover: #ffc4d5;
+  --phone-line: #e88fab;
   --phone-ink: var(--ink);
   --primary-bg: var(--brand-blue);
   --primary-bg-hover: #9bc6dc;
@@ -358,6 +358,7 @@ li { margin-bottom: var(--sp-2); }
 }
 .hero-media {
   position: relative;
+  width: 100%;
   border-radius: 0;
   aspect-ratio: 4 / 3;
   min-height: 260px;
