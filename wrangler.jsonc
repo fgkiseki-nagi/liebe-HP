@@ -3,6 +3,12 @@
   "name": "liebeclinic-care",
   "compatibility_date": "2026-08-20",
   "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "liebeclinic.care",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
