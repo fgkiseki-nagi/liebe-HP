@@ -16,34 +16,34 @@
 - 対応エリア: 旭川市（中心エリア）、名寄市・士別市・剣淵町・羽幌町（対応エリア＝定期的に訪問）、上川管内その他の市町村および北海道内その他（個別相談）。ご住所・病状・道路状況・診療体制をふまえて個別に判断します。
 
 ## 主要ページ
-- [トップ](https://fgkiseki-nagi.github.io/liebe-HP/): クリニックの概要と全体像
-- [訪問診療とは](https://fgkiseki-nagi.github.io/liebe-HP/home-care/): 定義、往診との違い、対象、診療内容
-- [ご利用の流れ](https://fgkiseki-nagi.github.io/liebe-HP/home-care/flow/): 相談から診療開始までの4ステップ
-- [費用の目安](https://fgkiseki-nagi.github.io/liebe-HP/home-care/fee/): 保険適用、内訳、負担割合ごとの考え方
-- [オンライン診療](https://fgkiseki-nagi.github.io/liebe-HP/home-care/online/): 対象、条件、厚労省指針に基づく実施
-- [看取り・ACP](https://fgkiseki-nagi.github.io/liebe-HP/home-care/end-of-life/): 在宅・施設での看取りの支援
-- [施設・法人の方へ](https://fgkiseki-nagi.github.io/liebe-HP/facilities/): 協力医療機関としての導入
-- [ケアマネ・医療機関の方へ](https://fgkiseki-nagi.github.io/liebe-HP/partners/): 連携と書類依頼
-- [対応エリア](https://fgkiseki-nagi.github.io/liebe-HP/area/): 市町村別の対応状況一覧
-- [旭川市の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/asahikawa/)
-- [名寄市の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/nayoro/)
-- [上川・道北の訪問診療](https://fgkiseki-nagi.github.io/liebe-HP/area/kamikawa-douhoku/)
-- [北海道の訪問診療の相談窓口](https://fgkiseki-nagi.github.io/liebe-HP/area/hokkaido/)
-- [よくあるご質問](https://fgkiseki-nagi.github.io/liebe-HP/faq/)
-- [院長紹介とクリニックの理念](https://fgkiseki-nagi.github.io/liebe-HP/about/)
-- [愛清会グループ](https://fgkiseki-nagi.github.io/liebe-HP/group/): 医療・介護・障がい福祉の法人と事業一覧
-- [アクセス・クリニック概要](https://fgkiseki-nagi.github.io/liebe-HP/access/)
-- [お問い合わせ・ご相談](https://fgkiseki-nagi.github.io/liebe-HP/contact/)
-- [個人情報保護方針](https://fgkiseki-nagi.github.io/liebe-HP/privacy/)
+- [トップ](https://liebeclinic.care/): クリニックの概要と全体像
+- [訪問診療とは](https://liebeclinic.care/home-care/): 定義、往診との違い、対象、診療内容
+- [ご利用の流れ](https://liebeclinic.care/home-care/flow/): 相談から診療開始までの4ステップ
+- [費用の目安](https://liebeclinic.care/home-care/fee/): 保険適用、内訳、負担割合ごとの考え方
+- [オンライン診療](https://liebeclinic.care/home-care/online/): 対象、条件、厚労省指針に基づく実施
+- [看取り・ACP](https://liebeclinic.care/home-care/end-of-life/): 在宅・施設での看取りの支援
+- [施設・法人の方へ](https://liebeclinic.care/facilities/): 協力医療機関としての導入
+- [ケアマネ・医療機関の方へ](https://liebeclinic.care/partners/): 連携と書類依頼
+- [対応エリア](https://liebeclinic.care/area/): 市町村別の対応状況一覧
+- [旭川市の訪問診療](https://liebeclinic.care/area/asahikawa/)
+- [名寄市の訪問診療](https://liebeclinic.care/area/nayoro/)
+- [上川・道北の訪問診療](https://liebeclinic.care/area/kamikawa-douhoku/)
+- [北海道の訪問診療の相談窓口](https://liebeclinic.care/area/hokkaido/)
+- [よくあるご質問](https://liebeclinic.care/faq/)
+- [院長紹介とクリニックの理念](https://liebeclinic.care/about/)
+- [愛清会グループ](https://liebeclinic.care/group/): 医療・介護・障がい福祉の法人と事業一覧
+- [アクセス・クリニック概要](https://liebeclinic.care/access/)
+- [お問い合わせ・ご相談](https://liebeclinic.care/contact/)
+- [個人情報保護方針](https://liebeclinic.care/privacy/)
 
 ## コラム
-- [在宅医療コラム一覧](https://fgkiseki-nagi.github.io/liebe-HP/column/)
-- [訪問診療と往診の違い](https://fgkiseki-nagi.github.io/liebe-HP/column/houmonshinryo-oushin-chigai/)
-- [親が通院できなくなったら](https://fgkiseki-nagi.github.io/liebe-HP/column/tsuuin-dekinai-oya/)
-- [北海道の冬と高齢者の通院](https://fgkiseki-nagi.github.io/liebe-HP/column/hokkaido-fuyu-tsuuin/)
-- [施設が協力医療機関を選ぶときの確認項目](https://fgkiseki-nagi.github.io/liebe-HP/column/shisetsu-dounyu-guide/)
-- [夜間の急変と救急要請の判断目安](https://fgkiseki-nagi.github.io/liebe-HP/column/yakan-kyuhen/)
-- [退院後に自宅で療養するための準備](https://fgkiseki-nagi.github.io/liebe-HP/column/taiin-go-zaitaku/)
+- [在宅医療コラム一覧](https://liebeclinic.care/column/)
+- [訪問診療と往診の違い](https://liebeclinic.care/column/houmonshinryo-oushin-chigai/)
+- [親が通院できなくなったら](https://liebeclinic.care/column/tsuuin-dekinai-oya/)
+- [北海道の冬と高齢者の通院](https://liebeclinic.care/column/hokkaido-fuyu-tsuuin/)
+- [施設が協力医療機関を選ぶときの確認項目](https://liebeclinic.care/column/shisetsu-dounyu-guide/)
+- [夜間の急変と救急要請の判断目安](https://liebeclinic.care/column/yakan-kyuhen/)
+- [退院後に自宅で療養するための準備](https://liebeclinic.care/column/taiin-go-zaitaku/)
 
 ## ご利用にあたって
 - 本サイトの情報は一般的な説明であり、個別の診断・治療方針を示すものではありません。

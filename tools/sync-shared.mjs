@@ -71,7 +71,16 @@ const eyebrowLabels = new Map([
 ]);
 
 function walkHtml(dir, relative = '') {
-  const ignored = new Set(['.git', 'liebeHP', 'references', 'partials', 'tools']);
+  const ignored = new Set([
+    '.git',
+    '.wrangler',
+    'dist',
+    'liebeHP',
+    'node_modules',
+    'partials',
+    'references',
+    'tools',
+  ]);
   const files = [];
 
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

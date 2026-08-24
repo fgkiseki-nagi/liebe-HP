@@ -1,0 +1,22 @@
+{
+  "name": "liebeclinic-care-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sync": "node tools/sync-shared.mjs",
+    "check": "node tools/check-site.mjs",
+    "check:dist": "node tools/check-site.mjs dist",
+    "verify": "npm run sync && npm run check",
+    "build": "node tools/build-site.mjs && npm run check:dist",
+    "dev": "npm run verify && npm run build && wrangler dev",
+    "deploy": "npm run verify && npm run build && wrangler deploy",
+    "deploy:preview": "npm run verify && npm run build && wrangler versions upload"
+  },
+  "devDependencies": {
+    "wrangler": "4.125.0"
+  }
+}

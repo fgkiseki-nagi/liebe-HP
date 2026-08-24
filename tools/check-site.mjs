@@ -3,11 +3,21 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.resolve(toolsDir, '..');
-const config = JSON.parse(fs.readFileSync(path.join(rootDir, 'site.config.json'), 'utf8'));
+const projectDir = path.resolve(toolsDir, '..');
+const rootDir = process.argv[2] ? path.resolve(projectDir, process.argv[2]) : projectDir;
+const config = JSON.parse(fs.readFileSync(path.join(projectDir, 'site.config.json'), 'utf8'));
 const baseUrl = config.baseUrl.endsWith('/') ? config.baseUrl : `${config.baseUrl}/`;
 const basePath = new URL(baseUrl).pathname;
-const ignored = new Set(['.git', 'liebeHP', 'references', 'partials', 'tools']);
+const ignored = new Set([
+  '.git',
+  '.wrangler',
+  'dist',
+  'liebeHP',
+  'node_modules',
+  'partials',
+  'references',
+  'tools',
+]);
 
 function walk(dir, relative = '') {
   const files = [];
