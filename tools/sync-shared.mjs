@@ -258,6 +258,18 @@ for (const relativePath of files) {
     relativePath,
   );
   html = html.replace(
+    /^\s*<svg class="icon icon--sm" aria-hidden="true"><use href="[^"]*assets\/icons\/sprite\.svg#i-doctor"\/><\/svg>\n\s*<span>監修：リーベクリニック 院長 <strong>山崎 清裕<\/strong>（<a href="[^"]*about\/">経歴を見る<\/a>）<\/span>\n/gm,
+    '',
+  );
+  html = html.replace(
+    /^\s*<span><svg class="icon icon--sm" aria-hidden="true"><use href="[^"]*assets\/icons\/sprite\.svg#i-doctor"\/><\/svg>監修：<a href="[^"]*about\/">院長 山崎 清裕<\/a><\/span>\n/gm,
+    '',
+  );
+  html = html.replace(
+    '<!-- ===== 監修・公開日ブロック ===== -->',
+    '<!-- ===== 公開日・更新日ブロック ===== -->',
+  );
+  html = html.replace(
     /<use href="(?:[^"]*sprite\.svg)?#(i-[^"]+)"\/>/g,
     `<use href="${root}assets/icons/sprite.svg#$1"/>`,
   );

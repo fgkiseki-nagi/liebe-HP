@@ -115,6 +115,14 @@ for (const relativePath of htmlFiles) {
   if (summaryBlocks.some((summary) => /<h[1-6]\b/i.test(summary))) {
     errors.push(`${prefix} heading element is nested inside <summary>`);
   }
+  const bylineBlocks = source.match(/<p class="byline">[\s\S]*?<\/p>/gi) || [];
+  if (bylineBlocks.some((byline) => /監修|sprite\.svg#i-doctor/.test(byline))) {
+    errors.push(`${prefix} review name or doctor icon remains in the date block`);
+  }
+  const articleMetaBlocks = source.match(/<p class="article-meta">[\s\S]*?<\/p>/gi) || [];
+  if (articleMetaBlocks.some((meta) => /監修/.test(meta))) {
+    errors.push(`${prefix} review name remains in article metadata`);
+  }
 
   const title = source.match(/<title>([^<]+)<\/title>/i)?.[1]?.trim();
   if (!title) errors.push(`${prefix} missing <title>`);
