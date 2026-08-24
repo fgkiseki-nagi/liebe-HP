@@ -39,8 +39,8 @@ npm run build
 
 1. 作業ブランチで `npm ci && npm run verify && npm run build` を実行。
 2. `npm run dev` で主要ページをデスクトップ幅・タブレット幅・スマートフォン幅で表示確認。
-3. 作業ブランチをpushし、CloudflareのプレビューURLでページ、画像、PDF、404を確認。
-4. 内容確認後に `codex/publish-liebe-clinic` へマージ。Cloudflare Workers Buildsが本番へ自動配信します。
+3. `npm run deploy:preview` でCloudflareのVersion Previewを作成し、ページ、画像、PDF、404を確認。
+4. 内容確認後に `codex/publish-liebe-clinic` へマージ・pushし、そのブランチで `npm run deploy` を実行。
 5. https://liebeclinic.care/ 、`/robots.txt`、`/sitemap.xml`、存在しないURLのHTTP 404、HTTPS証明書を確認。
 6. Cloudflareで直前の正常なDeploymentへ戻せることを確認し、Gitにリリースタグを付けます。
 
@@ -48,11 +48,13 @@ Cloudflare側の設定は次のとおりです。
 
 - Worker名: `liebeclinic-care`
 - Production branch: `codex/publish-liebe-clinic`
-- Build command: `npm run verify && npm run build`
-- Deploy command: `npx wrangler deploy`
-- Non-production deploy command: `npx wrangler versions upload`
+- 本番コマンド: `npm run deploy`
+- プレビューコマンド: `npm run deploy:preview`
+- 初回または認証期限切れ時: `npx wrangler login`（Cloudflare公式OAuth）
 - Static assets directory: `dist`
 - Custom Domain: `liebeclinic.care`
+
+Cloudflare DashboardのGit連携は任意です。接続する場合はProduction branchを上記に固定し、Build commandを `npm run verify && npm run build`、Deploy commandを `npx wrangler deploy` にします。Git連携を使わない現在の構成では、検証後に上記の本番コマンドを明示的に実行します。
 
 ## よくある更新
 - **院長写真を載せる**: `assets/img/doctor-yamazaki.jpg`（縦長 720×960 推奨）を置き、`index.html` と `about/index.html` 内のコメント「院長写真の差し替え手順」に従って1行を切り替える。
