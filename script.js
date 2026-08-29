@@ -3,7 +3,8 @@
    1. モバイルナビゲーションの開閉・フォーカス管理
    2. スクロール時のヘッダー影
    3. 画像が読み込めなかったときのフォールバック表示
-   4. ヘッダーナビの現在ページ表示 */
+   4. ヘッダーナビの現在ページ表示
+   5. 電話リンクのクリック計測（GA4） */
 (function () {
   'use strict';
 
@@ -114,4 +115,16 @@
 
     (currentLink || parentLink || {}).setAttribute && (currentLink || parentLink).setAttribute('aria-current', 'page');
   } catch (error) { /* Navigation remains usable if URL parsing is unavailable. */ }
+
+  /* 電話リンクのクリック計測（GA4。タグ未読み込み時は何もしない） */
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!link || typeof window.gtag !== 'function') return;
+
+    var number = link.getAttribute('href').replace('tel:', '');
+    window.gtag('event', number === '119' ? 'tel_click_119' : 'tel_click', {
+      phone_number: number,
+      page_path: location.pathname
+    });
+  });
 })();
